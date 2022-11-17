@@ -1,0 +1,114 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Solitaire.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 47.5, 71.5 )
+
+[node name="Solitaire" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="bg" type="ColorRect" parent="."]
+margin_right = 961.0
+margin_bottom = 546.0
+color = Color( 0.156863, 0.25098, 0.160784, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="deck" type="ColorRect" parent="."]
+margin_left = 840.0
+margin_top = 18.0
+margin_right = 935.0
+margin_bottom = 161.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="A1" type="Area2D" parent="."]
+position = Vector2( 359, 18 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="A1"]
+position = Vector2( 47.5, 71.5 )
+shape = SubResource( 1 )
+
+[node name="A1" type="ColorRect" parent="A1"]
+margin_right = 95.0
+margin_bottom = 143.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="A2" type="ColorRect" parent="."]
+margin_left = 245.0
+margin_top = 18.0
+margin_right = 340.0
+margin_bottom = 161.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="A3" type="ColorRect" parent="."]
+margin_left = 131.0
+margin_top = 18.0
+margin_right = 226.0
+margin_bottom = 161.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="A4" type="ColorRect" parent="."]
+margin_left = 17.0
+margin_top = 18.0
+margin_right = 112.0
+margin_bottom = 161.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S1" type="ColorRect" parent="."]
+margin_left = 17.0
+margin_top = 180.0
+margin_right = 112.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S2" type="ColorRect" parent="."]
+margin_left = 131.0
+margin_top = 180.0
+margin_right = 226.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S3" type="ColorRect" parent="."]
+margin_left = 245.0
+margin_top = 180.0
+margin_right = 340.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S4" type="ColorRect" parent="."]
+margin_left = 359.0
+margin_top = 180.0
+margin_right = 454.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S5" type="ColorRect" parent="."]
+margin_left = 473.0
+margin_top = 180.0
+margin_right = 568.0
+margin_bottom = 323.0
+rect_pivot_offset = Vector2( -372, 110 )
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S6" type="ColorRect" parent="."]
+margin_left = 587.0
+margin_top = 180.0
+margin_right = 682.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="S7" type="ColorRect" parent="."]
+margin_left = 701.0
+margin_top = 180.0
+margin_right = 796.0
+margin_bottom = 323.0
+color = Color( 0.415686, 0.478431, 0.419608, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 611.0
+margin_top = 2.0
+margin_right = 957.0
+margin_bottom = 16.0
+text = "Cards Asset: https://cazwolf.itch.io/pixel-fantasy-cards"
